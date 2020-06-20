@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "setVideo.Service", "setVide
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "setVideo.WebApi", "setVideo.WebApi1\setVideo.WebApi.csproj", "{941A68E4-A38B-4340-8811-0DC3F1839AA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "teste222", "teste222\teste222.csproj", "{E93080D7-0933-4A2C-BDA4-F44C37663F50}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "setVideo.test", "setVideo.test\setVideo.test.csproj", "{CCEEF1B9-BBDD-4C6F-844B-AD6AA7BE619A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +33,9 @@ Global
 		{941A68E4-A38B-4340-8811-0DC3F1839AA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{941A68E4-A38B-4340-8811-0DC3F1839AA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{941A68E4-A38B-4340-8811-0DC3F1839AA4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E93080D7-0933-4A2C-BDA4-F44C37663F50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E93080D7-0933-4A2C-BDA4-F44C37663F50}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E93080D7-0933-4A2C-BDA4-F44C37663F50}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E93080D7-0933-4A2C-BDA4-F44C37663F50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCEEF1B9-BBDD-4C6F-844B-AD6AA7BE619A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCEEF1B9-BBDD-4C6F-844B-AD6AA7BE619A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCEEF1B9-BBDD-4C6F-844B-AD6AA7BE619A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCEEF1B9-BBDD-4C6F-844B-AD6AA7BE619A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

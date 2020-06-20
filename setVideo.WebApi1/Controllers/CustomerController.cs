@@ -20,15 +20,19 @@ namespace setVideo.WebApi.Controllers
         public Customer Get(int id) => _customerServices.GetById(id);
 
         [HttpPost()]
-        public void Post(Customer customer) => _customerServices.Add(customer);
+        public string Post([FromBody] Customer customer)
+        { return _customerServices.Add(customer); }
 
+        [HttpPost("{id}")]
+        public void DeleteUser(int id) => _customerServices.DeleteUser(id);
 
     }
 
     public interface ICustomerController
     {
         Customer Get(int id);
-        void Post(Customer customer);
+        string Post(Customer customer);
+        void DeleteUser(int id);
 
     }
 }

@@ -19,19 +19,20 @@ namespace setVideo.WebApi.Controllers
       
 
         [HttpPost()]
-        public string Post([FromBody] Location location)
-        { return _locationServices.Add(location); }
+        public string Post([FromBody] int idMovie, int idCustomer)
+        { return _locationServices.Add(idMovie,idCustomer); }
 
         [HttpPost()]
-        public string Devolution([FromBody] Location location)
+        public string Devolution([FromBody] int idMovie, int idCustomer)
         {
-            return _locationServices.Devolution(location);
+            return _locationServices.Devolution(idMovie, idCustomer);
         }
     }
 
     public interface ILocationController
     {
-         string Post(Location location);
+         string Post(int idMovie, int idCustomer);
+        string Devolution(int idMovie, int idCustomer);
         
 
     }

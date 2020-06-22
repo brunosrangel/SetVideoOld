@@ -26,6 +26,7 @@ namespace setVideo.WebApi.Controllers
         [HttpPost("{id}")]
         public void DeleteUser(int id) => _customerServices.DeleteUser(id);
 
+
     }
 
     public interface ICustomerController

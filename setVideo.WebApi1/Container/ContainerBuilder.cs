@@ -12,6 +12,16 @@ namespace setVideo.WebApi.Container
             services.AddTransient<ICustomerRepository, CustomerRepository>();
             services.AddTransient<ICustomerServices, CustomerServices>();
             services.AddTransient<ICustomerController, CustomerController>();
+
+            services.AddTransient<ILocationRepository, LocationRepository>();
+            services.AddTransient<ILocationServices, LocationServices>();
+            services.AddTransient<ILocationController, LocationController>();
+
+            services.AddTransient<IMovieRepository, MovieRepository>();
+            services.AddTransient<IMoviesServices, MoviesServices>();
+            
+
+
         }
     }
 }

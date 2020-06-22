@@ -1,38 +1,44 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using setVideo.Model;
 using setVideo.Service;
 
 namespace setVideo.WebApi.Controllers
 {
     [Route("api/[controller]")]
-    public class LocationController : Controller , ILocationController
+    public class LocationController : Controller, ILocationController
     {
         private readonly ILocationServices _locationServices;
-        public LocationController(ILocationServices locationService)
+
+        public LocationController(ILocationServices locationService, ICustomerServices customerService, IMoviesServices moviesService)
         {
             _locationServices = locationService;
+
         }
-      
+
 
         [HttpPost()]
-        public string Post([FromBody] int idMovie, int idCustomer)
-        { return _locationServices.Add(idMovie,idCustomer); }
-
-        [HttpPost()]
-        public string Devolution([FromBody] int idMovie, int idCustomer)
+        public string Post([FromBody] dtLocation loc)
         {
-            return _locationServices.Devolution(idMovie, idCustomer);
+            return _locationServices.Alter(loc.idCustomer, loc.idMovie, loc.action);
         }
+        [HttpPost("cretateDB")]
+        public string CretateDb()
+        {
+            return _locationServices.createDb();
+        }
+    }
+    public class dtLocation
+    {
+        public int idMovie { get; set; }
+        public int idCustomer { get; set; }
+        public string action { get; set; }
+
     }
 
     public interface ILocationController
     {
-         string Post(int idMovie, int idCustomer);
-        string Devolution(int idMovie, int idCustomer);
+         string Post(dtLocation loc);
+        //string Devolution(int idMovie, int idCustomer);
         
 
     }

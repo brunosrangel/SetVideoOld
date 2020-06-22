@@ -38,4 +38,12 @@ Global
 		{CCEEF1B9-BBDD-4C6F-844B-AD6AA7BE619A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCEEF1B9-BBDD-4C6F-844B-AD6AA7BE619A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
+		$0.VersionControlPolicy = $2
+		$2.CommitMessageStyle = $3
+		$3.IncludeDirectoryPaths = True
+	EndGlobalSection
 EndGlobal

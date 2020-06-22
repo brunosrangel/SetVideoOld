@@ -40,11 +40,11 @@ namespace setVideo.Service
             if (action == "location")
             {
 
-                return this.Add(location);
+                return Add(location);
             }
             else
             {
-                return this.Devolution(location);
+                return Devolution(location);
             }
         }
 
